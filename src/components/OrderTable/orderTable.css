@@ -1,0 +1,30 @@
+
+.ant-table-thead > tr > th {
+    background: #f7f9fe !important;
+    padding: 10px !important;
+    font-size: 10px !important;
+    font-weight: bold !important;
+}
+
+
+.order_table .ant-table-row{
+    cursor: pointer !important;
+}
+.payment_status_tag{
+    font-weight: bold !important;
+    width: auto;
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: center !important;
+    color: black !important;
+}
+
+.delivery_status_badge{
+    color: black !important;
+    font-weight: bold;
+    display: flex !important;
+    align-items: center !important;
+    width: 100px !important;
+    justify-content: space-between;
+}
+
