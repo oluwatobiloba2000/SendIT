@@ -62,3 +62,13 @@
     border-radius: 20px 20px 0;
     margin-top: 15px;
 }
+
+@media all and (max-width: 400px){
+    .order_table_container>div>h3{
+        font-size: 12px;
+    }
+
+    .order_filter_container{
+        display: flex;
+    }
+}

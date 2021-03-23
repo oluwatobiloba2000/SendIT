@@ -72,7 +72,7 @@ function LogisticsCompanyLogin() {
                         />: ''}
                     <div className="login_logis_auth_form logis_auth_form_text">
                         <h3>Login</h3>
-                        <svg style={{ position: 'absolute', left: '-3px', top: '31px' }} width="90" height="17" viewBox="0 0 90 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg id="logis_auth_login_svg" style={{ position: 'absolute', left: '-3px', top: '31px' }} width="90" height="17" viewBox="0 0 90 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.47994 15.4037C35.387 3.07519 73.6995 4.62618 88.6173 6.94274" stroke="#F77F00" stroke-width="3" />
                         </svg>
                     </div>

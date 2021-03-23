@@ -110,7 +110,7 @@ function CompanyOrder() {
                     <div className="order_table_container">
                         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <h3>Orders Summary</h3>
-                            <div>
+                            <div className="order_filter_container">
                                 <Select onChange={(order_status) => {
                                     searchOrders(null, order_status, 'from_search')
                                 }

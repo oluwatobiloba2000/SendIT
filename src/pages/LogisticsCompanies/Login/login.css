@@ -143,4 +143,8 @@
     top: 31px !important;
     width: 90px !important;
   }
+
+  #logis_auth_login_svg{
+    left: -70px !important;
+  }
 }
