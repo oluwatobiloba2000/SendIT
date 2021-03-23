@@ -1,0 +1,33 @@
+.loader_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9000000000000;
+    background-color: rgb(255 255 255);
+}
+
+.relative_loader{
+    position: relative !important;
+}
+
+.spin_loader .ant-spin-dot-item{
+    background-color: #f77f00 !important;
+}
+
+.loader_logo .logo_text{
+    color: black !important;
+}
+
+.network_error{
+    background-image: url(https://cdn.dribbble.com/users/1637182/screenshots/5270298/wifi-__.gif);
+    height: 200px;
+    background-size: 141% 190%;
+    background-position: center;
+}
+
