@@ -1,7 +1,7 @@
 .headerbar {
   height: 62px !important;
   background-color: white !important;
-  padding: 0px 20px !important;
+  padding: 0px 20px;
 }
 
 .headerbar_widjet {
@@ -40,6 +40,10 @@
   margin-left: 9px;
 }
 
+.mobile_logout_btn{
+  display: none;
+}
+
 @media all and (max-width: 460px) {
   .username {
     white-space: nowrap;
@@ -47,6 +51,32 @@
     text-overflow: ellipsis;
     max-width: 151px;
   }
+}
+
+
+@media all and (max-width: 400px){
+    .headerbar{
+      padding: 0 0 0 5px !important ;
+    }
+
+    .user_profile_details{
+      display: flex !important;
+      width: 98% !important;
+      justify-content: space-between !important;
+    }
+
+    .username{
+      max-width: 530px !important;
+      margin-right: 21px !important;
+    }
+
+    .dropdown_menu{
+      display: none !important;
+    }
+
+    .mobile_logout_btn{
+      display: block;
+    }
 }
 
 

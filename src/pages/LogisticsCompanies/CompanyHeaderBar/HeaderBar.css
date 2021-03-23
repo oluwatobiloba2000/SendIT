@@ -1,55 +1,85 @@
-.headerbar{
-    height: 62px !important;
-    background-color: white !important;
-    padding: 0px 20px !important;
+.headerbar {
+  height: 62px;
+  background-color: white;
+  padding: 0px 20px;
 }
 
-.headerbar_widjet{
-    display: flex;
-    height: 100%;
-    justify-content: flex-end;
+.headerbar_widjet {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
 }
 
-.notification_bell, .settings{
-    margin-right: 17px;
-    display: flex;
-    align-items: center;
+.notification_bell,
+.settings {
+  margin-right: 17px;
+  display: flex;
+  align-items: center;
 }
 
-.headerbar_userpics{
-    width: 40px;
-    height: 40px;
+.headerbar_userpics {
+  width: 40px;
+  height: 40px;
 }
 
-.user_profile_details{
-    display: flex;
-    align-items: center;
+.user_profile_details {
+  display: flex;
+  align-items: center;
 }
 
-.username{
-    margin-left: 10px;
-    font-weight: 600;
-    font-size: 14px;
+.username {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.dropdown_menu{
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    margin-left: 9px;
+.dropdown_menu {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 9px;
+}
+
+.mobile_logout_btn {
+  display: none;
 }
 
 @media all and (max-width: 460px) {
-    .username {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 151px;
-    }
+  .username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 151px;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .headerbar {
+    padding: 0 0 0 5px !important ;
   }
 
-  @media all and (max-width: 365px){
-      .username{
-        max-width: 100px;
-      }
+  .user_profile_details {
+    display: flex !important;
+    width: 98% !important;
+    justify-content: space-between !important;
   }
+
+  .username {
+    max-width: 530px !important;
+    margin-right: 21px !important;
+  }
+
+  .dropdown_menu {
+    display: none !important;
+  }
+
+  .mobile_logout_btn {
+    display: block;
+  }
+}
+
+@media all and (max-width: 365px) {
+  .username {
+    max-width: 100px;
+  }
+}

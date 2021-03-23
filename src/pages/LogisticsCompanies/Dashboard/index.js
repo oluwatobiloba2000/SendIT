@@ -313,7 +313,7 @@ function CompanyDashboard() {
                                                 </div>
                                             </div>
                                         })
-                                        : <img src={emptySvg} alt="empty" />
+                                        : <img style={{width: '300px'}} src={emptySvg} alt="empty" />
                                 }
 
                             </div>
