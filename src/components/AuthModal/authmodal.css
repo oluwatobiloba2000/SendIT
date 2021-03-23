@@ -1,0 +1,220 @@
+.auth_modal .ant-modal-body {
+  padding: 0 !important;
+}
+
+.auth_modal .ant-modal-footer {
+  display: none;
+}
+
+.auth_modal .ant-modal-close-x {
+  background-color: #f36c2342;
+  border-radius: 44px;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
+  margin-right: 7px;
+  color: #00000096;
+}
+
+.auth_modal .ant-modal-close-x:hover {
+  background-color: #f77f00;
+  color: white;
+}
+
+.auth_modal .ant-modal-content {
+  height: 605px;
+}
+
+.modal_container {
+  display: flex;
+  height: 605px;
+}
+
+.svg_modal {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, white, #f77f00) !important;
+}
+
+.auth_logo .logo_text {
+  color: black;
+  font-size: 20px;
+}
+
+.auth_logo_container {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+}
+.auth_logo {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.auth_logo > img {
+  width: 40px;
+}
+
+.control_auth_btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_body {
+  margin-top: 83px;
+  margin-left: 35px;
+}
+
+.auth_form_text > h3 {
+  position: relative;
+  color: #003049;
+  font-size: 31px;
+}
+
+.auth_form_text {
+  position: relative;
+}
+
+.auth_form {
+  display: flex;
+  flex-direction: column;
+  width: 330px;
+  position: relative;
+}
+
+.auth_form_label {
+  font-size: 16px;
+}
+
+.email_input,
+.password_input,
+.firstname_input,
+.lastname_input {
+  height: 40px;
+  margin-top: 5px;
+  width: 100%;
+  font-size: 11px;
+  text-indent: 8px;
+  border-radius: 6px;
+  border: 1px solid #80808059;
+}
+
+.auth_btn_container {
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.create_acc_form_body {
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.form_content{
+  overflow: auto;
+  width: 50%;
+  padding: 10px 0px;
+}
+
+.mobile_auth_switch{
+  display: none;
+}
+
+@media all and (max-width: 800px){
+  .svg_modal{
+    display: none;
+  }
+
+  .form_content{
+    width: 100%;
+  }
+
+  .auth_form{
+    width: 95%;
+  }
+
+  .mobile_auth_switch{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .mobile_auth_switch>p{
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* @media all and (max-width: 660px) {
+  .svg_modal {
+    width: 40%;
+  }
+
+  .svg_modal .auth_svg{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .svg_modal {
+    width: 0;
+  }
+
+  .auth_logo_container {
+    position: absolute;
+    margin-top: 0px;
+    left: 0px;
+    top: 15px;
+    width: 154px;
+  }
+
+  .svg_modal img {
+    display: none;
+  }
+
+  .svg_modal svg {
+    display: none;
+  }
+
+  .control_auth_btn {
+    position: absolute;
+    bottom: 14px;
+    width: 367px;
+    display: -webkit-box;
+    left: 70px;
+  }
+  .control_auth_btn > h4 {
+    margin-right: 11px;
+    margin-top: 5px;
+  }
+  .form_content {
+    width: 100%;
+  }
+
+  .form_body {
+    margin-top: 54px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .auth_logo {
+    display: flex;
+  }
+  .auth_logo > img {
+    display: block;
+    width: 40px !important;
+  }
+
+  .create_acc_form_body {
+    margin-top: 66px;
+  }
+} */
