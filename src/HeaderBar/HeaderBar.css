@@ -1,0 +1,57 @@
+.headerbar {
+  height: 62px !important;
+  background-color: white !important;
+  padding: 0px 20px !important;
+}
+
+.headerbar_widjet {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.notification_bell,
+.settings {
+  margin-right: 17px;
+  display: flex;
+  align-items: center;
+}
+
+.headerbar_userpics {
+  width: 40px;
+  height: 40px;
+}
+
+.user_profile_details {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin-left: 10px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dropdown_menu {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  margin-left: 9px;
+}
+
+@media all and (max-width: 460px) {
+  .username {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 151px;
+  }
+}
+
+
+@media all and (max-width: 365px){
+    .username{
+      max-width: 100px;
+    }
+}
