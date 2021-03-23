@@ -1,0 +1,40 @@
+.custom-btn-primary{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #003049  !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    color: white !important;
+    padding: 0px 20px !important;
+}
+
+.custom-btn-primary:hover{
+    border: 3px solid #003049 !important;
+    padding: 0px 19px !important;
+    color: #003049 !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    background-color: white !important;
+}
+
+
+.custom-btn-secondary{
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #f77f00 !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 20px !important;
+    color: white !important;
+    padding: 0px 20px !important;
+}
+
+.custom-btn-secondary:hover{
+    background-color: white;
+    color: #f77f00;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 3px solid #f77f00;
+    padding: 0px 19px !important;
+}
