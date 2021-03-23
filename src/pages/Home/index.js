@@ -364,7 +364,7 @@ function Home() {
             </section>
 
             <section className="docs_container">
-                <svg style={{ position: 'absolute', right: '0', top: '-142px' }} width="199" height="356" viewBox="0 0 199 356" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="logis_company_panel_svg_overlay" style={{ position: 'absolute', right: '0', top: '-142px' }} width="199" height="356" viewBox="0 0 199 356" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g style={{ mixBlendMode: 'overlay' }}>
                         <path d="M351 178C351 276.307 272.426 356 175.5 356C78.574 356 0 276.307 0 178C0 79.6933 78.574 0 175.5 0C272.426 0 351 79.6933 351 178Z" fill="#003049" />
                         <path d="M351 178C351 276.307 272.426 356 175.5 356C78.574 356 0 276.307 0 178C0 79.6933 78.574 0 175.5 0C272.426 0 351 79.6933 351 178Z" fill="url(#paint0_linear)" />
@@ -378,7 +378,7 @@ function Home() {
                 </svg>
 
 
-                <svg style={{ position: 'absolute', left: '-106px', top: '34px' }} width="662" height="651" viewBox="0 0 662 651" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className="logis_company_panel_svg_overlay" style={{ position: 'absolute', left: '-106px', top: '34px' }} width="662" height="651" viewBox="0 0 662 651" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g style={{ mixBlendMode: 'overlay' }}>
                         <ellipse cx="331" cy="325.5" rx="331" ry="325.5" fill="#0A4564" />
                         <ellipse cx="331" cy="325.5" rx="331" ry="325.5" fill="url(#paint0_linear)" />

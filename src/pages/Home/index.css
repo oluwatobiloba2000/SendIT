@@ -556,4 +556,14 @@
     .home_footer{
         padding: 0 10px;
     }
+    .left_overlay_svg{
+      display: none;
+    }
+    .how_it_works_overlay{
+      display: none;
+    }
+
+    .logis_company_panel_svg_overlay{
+      display: none;
+    }
 }
