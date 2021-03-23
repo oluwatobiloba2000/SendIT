@@ -48,6 +48,8 @@ function Order() {
                 localStorage.removeItem('token');
                 message.error('Not Authorized');
                 setShowAuthModal(true);
+            } else if (error.response.data && error.response.data.error) {
+                return message.error(error.response.data.error, 5)
             } else {
                 message.error('something went wrong');
             }
@@ -101,7 +103,6 @@ function Order() {
           if(currentUser.data.id){
               socket.emit("enter_user_room_through_id", {id : currentUser.data.id});
           }
-            console.count('useffect with userid dependency is counting')
       }, [currentUser.data.id])
 
 

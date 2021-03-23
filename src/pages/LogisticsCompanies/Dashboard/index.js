@@ -36,7 +36,6 @@ function CompanyDashboard() {
          message.loading('Approving.....', 1);
         axios.put(`/company/order/approve?track_id=${track_number}`)
             .then(function (response) {
-            console.log("🚀 ~ file: order_company_slice.js ~ line 199 ~ response", {response})
                dispatch(api_approve_order_success({track_number: track_number}));
 
                 message.success('order approved', 2);
@@ -215,7 +214,6 @@ function CompanyDashboard() {
                                     </>
                             }
                         </div>
-                        {/* {console.log({companyOrder})} */}
                         <div className="company_pending_orders_container">
                             <h3>
                                 Pending Orders

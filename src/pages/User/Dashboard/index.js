@@ -184,7 +184,6 @@ function Dashboard() {
       if(currentUser.data.id){
           socket.emit("enter_user_room_through_id", {id : currentUser.data.id});
       }
-        console.count('useffect with userid dependency is counting')
   }, [currentUser.data.id])
 
 

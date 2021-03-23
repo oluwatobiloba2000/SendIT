@@ -33,7 +33,7 @@
 
 @media all and (max-width: 400px) {
   .sidebar_menu {
-    position: absolute !important;
+    position: fixed !important;
     width: 100% !important;
     display: flex;
     justify-content: space-between;
