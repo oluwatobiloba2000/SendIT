@@ -94,7 +94,6 @@ function OrderDetailsCompany() {
     }, [CONNECTION_PORT]);
 
     useEffect(() => {
-        //   console.log(currentUser.data.id);
         socket.emit("enter_activity_details_room", { track_number });
     }, [])
 
@@ -135,7 +134,6 @@ function OrderDetailsCompany() {
             })
             .catch(function (error) {
                 setPendingTimeline('')
-                console.log({ error })
             });
     }
 

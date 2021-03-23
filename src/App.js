@@ -18,10 +18,10 @@ import OrderDetailsCompany from './pages/LogisticsCompanies/OrderDetails_company
 import Profile from './pages/LogisticsCompanies/Profile';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
-axios.defaults.baseURL = 'https://api-sendit-backend.herokuapp.com/api/v1';
-export const CONNECTION_PORT = "https://api-sendit-backend.herokuapp.com/";
-// export const CONNECTION_PORT = "http://localhost:4004";
-// axios.defaults.baseURL = 'http://localhost:4004/api/v1';
+// axios.defaults.baseURL = 'https://api-sendit-backend.herokuapp.com/api/v1';
+// export const CONNECTION_PORT = "https://api-sendit-backend.herokuapp.com/";
+export const CONNECTION_PORT = "http://localhost:4004";
+axios.defaults.baseURL = 'http://localhost:4004/api/v1';
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 const LogisticsCompanySignup = lazy(() => import('./pages/LogisticsCompanies/Signup'));

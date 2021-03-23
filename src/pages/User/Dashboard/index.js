@@ -152,6 +152,7 @@ function Dashboard() {
 
   useEffect(() => {
     const adminEventHandler = (data) => {
+        console.log('Recieved data from admin', data)
         toast.info(`🎉 ${data.body}`, {
             position: "top-right",
             autoClose: 6000,

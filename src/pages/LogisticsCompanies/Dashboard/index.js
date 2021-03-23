@@ -40,7 +40,7 @@ function CompanyDashboard() {
 
                 message.success('order approved', 2);
                 dispatch(company_fetch_orders_analytics())
-                sendActivity(track_number, response.data.data.id, response.data.data.user_id);
+                sendActivity(track_number, response.data.data.user_id);
                 socket.emit("approve_order", {
                     room: 'all_company_room',
                     content: track_number
