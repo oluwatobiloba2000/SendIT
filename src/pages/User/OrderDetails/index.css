@@ -1,0 +1,115 @@
+.order_details_content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order_info{
+    padding: 10px;
+    width: 380px;
+    background-color: white;
+}
+
+.order_info_list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.order_info_list>li{
+    display: flex;
+    justify-content: space-between;
+    margin: 18px 0;
+}
+
+.info_key{
+    color: #808080;
+    width: 184px;
+    font-size: 12px;
+}
+
+.info_value{
+    font-size: 12px;
+}
+
+.activity_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin-left: 5px;
+    padding: 10px;
+}
+
+.activity_container .ant-timeline-label{
+    width: 93%;
+    margin-top: 25px;
+}
+
+.activity_container .ant-timeline-item-label{
+    color: #f77f00;
+}
+
+.activity_container .ant-timeline-item-content{
+    border: 1px solid #ffa50042;
+    padding: 5px 0px 5px 5px;
+    border-radius: 10px 10px 0px 10px;
+    background-color: #f77f0021;
+    font-size: 12px;
+}
+
+.activity_container .ant-timeline-item-last > .ant-timeline-item-content {
+    min-height: 0px !important;
+}
+
+.activity_order_time{
+    margin: 0 6px -7px 0px;
+    text-align: end;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.package_picture{
+    width:380px;
+    height: 206px;
+    background-color: white;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.loader_network_error{
+    position: relative;
+    width: 340px;
+        background-image: url(https://cdn.dribbble.com/users/1637182/screenshots/5270298/wifi-__.gif);
+        height: 200px;
+        background-size: 141% 190%;
+        background-position: center;
+}
+
+.order_details_network_error_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+    width: 100%;
+    background-color: white;
+}
+
+.badge_success .ant-badge-status-text{
+    color: green !important;
+}
+
+@media all and (max-width: 860px){
+    .order_details_content{
+        flex-direction: column;
+    }
+
+    .order_info, .package_picture{
+        width: 100%;
+    }
+
+    .activity_container{
+        margin: 5px 0;
+    }
+}

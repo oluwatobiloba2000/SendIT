@@ -1,0 +1,118 @@
+.not_found_container {
+  padding: 10px;
+  height: 100vh;
+  display: flex;
+  background-image: url(../../img/wood_pattern.svg);
+  background-position: 100% 100%;
+}
+
+.not_found_logo {
+  width: 111px;
+  position: absolute;
+}
+
+.not_found_logo .logo_text {
+  color: black;
+}
+
+.not_found_svg_container {
+  height: 100%;
+  width: 50%;
+}
+
+.not_found_svg_container img {
+  width: 100%;
+  height: 100%;
+}
+
+.not_found_btn_container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.not_found_btn_container > a {
+  width: 105px;
+  border-radius: 10px;
+  height: 35px;
+  background-color: #003049;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.not_found_btn_container > a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  z-index: -1;
+  right: 134px;
+  width: 105px;
+  border-radius: 10px;
+  height: 35px;
+  background-color: #f77f00;
+}
+
+.not_found_content {
+  margin-top: 220px;
+}
+
+.not_found_title {
+  position: relative;
+}
+
+.not_found_title > h1 {
+  font-size: 48px;
+  color: #003049;
+}
+
+.not_found_title > svg {
+  position: absolute;
+  top: 46px;
+}
+
+@media screen and (max-width: 860px) {
+  .not_found_container {
+    flex-direction: column;
+  }
+
+  .not_found_svg_container {
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .not_found_content {
+    margin-top: 0;
+  }
+
+  .not_found_btn_container {
+    width: 180px;
+    margin: auto;
+  }
+  .not_found_btn_container > a:after {
+    right: 32px;
+  }
+  .not_found_title {
+    justify-content: center;
+    display: flex;
+  }
+
+}
+
+@media screen and (max-width: 490px){
+    .not_found_title>h1{
+        font-size: 20px;
+    }
+
+    .not_found_title>svg{
+        width: 166px;
+    top: 6px;
+    }
+
+    .not_found_btn_container{
+        margin-top: 35px;
+    }
+}

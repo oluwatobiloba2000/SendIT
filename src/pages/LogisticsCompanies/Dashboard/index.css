@@ -1,0 +1,103 @@
+.user_content {
+  background-color: #c4c4c440;
+  margin-right: 15px;
+  border-top-right-radius: 33px;
+}
+
+.company_analytic_card_container{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+
+.company_order_stats_container{
+  display: flex;
+  width: 220px;
+    justify-content: space-between;
+}
+
+.company_analytic_card{
+  padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-radius: 11px;
+}
+
+.dashboard_greetings{
+  display: flex;
+  justify-content: space-between;
+    width: 100%;
+}
+
+.company_pending_orders_container{
+  background-color: white;
+  width: 100%;
+  margin-top: 10px;
+  padding: 20px;
+    border-radius: 25px;
+}
+
+.company_pending_order{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pending_order_div{
+  position: relative;
+  height: 444px;
+  margin: 15px;
+  width: 320px;
+  border: 1px solid #f77f00;
+  border-radius: 17px;
+  padding: 7px;
+  font-size: 11px;
+}
+
+.pending_order_profile{
+  justify-content: space-between;
+}
+
+.pending_order_profile>p{
+  align-items: center;
+  margin: 0;
+}
+
+.justify-content-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar_logo{
+  position: relative;
+}
+
+.sidebar_logo .logo_text{
+  margin-left: 22px;
+}
+
+.company_sidebar_logo{
+  width: 30px;
+    position: absolute;
+    border-radius: 15px;
+    border: 3px solid black;
+    top: 19px;
+    left: 38px;
+}
+
+@media all and (max-width: 400px){
+  .dashboard_greetings{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard_greetings_text_div{
+    width: 100% !important;
+  }
+}

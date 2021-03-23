@@ -1,0 +1,22 @@
+.forgot_password_content_container{
+    margin: auto;
+    height: 100%;
+}
+
+.reset_password_input{
+    border: 1px solid;
+    height: 38px;
+    text-indent: 10px;
+}
+@media screen and (max-width: 925px){
+.forgot_password_content_container {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.forgot_password_title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+}

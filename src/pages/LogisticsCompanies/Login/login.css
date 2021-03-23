@@ -1,0 +1,146 @@
+.logis_auth_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.logis_side_panel {
+  position: relative;
+  width: 500px;
+  display: flex;
+  background-color: #003049;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logis_logo {
+  margin-top: 15px;
+  margin-left: 12px;
+}
+
+.logis_panel_content {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logis_panel_content > h1 {
+  font-size: 31px;
+  text-align: center;
+  color: white;
+}
+
+.logis_panel_text {
+  padding: 0 17px;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
+}
+
+.logis_panel_img {
+  margin-top: 45px;
+}
+
+.auth_switch {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.auth_switch_btn {
+  width: 100px;
+  background: #f77f00;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.login_panel_text {
+  margin-top: 9px !important;
+}
+
+.login_panel_img {
+  margin-top: 20px !important;
+}
+
+.login_auth_switch {
+  margin-top: 26px !important;
+}
+
+.logis_auth_form_text > h3 {
+  position: relative;
+  color: #003049;
+  font-size: 31px;
+}
+
+.logis_auth_form_text {
+  position: relative;
+}
+
+.logis_form_content {
+  width: 56%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logis_login_form_body {
+  width: 330px;
+  height: 74%;
+}
+
+.logis_auth_form{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.email_input,
+.password_input{
+  height: 40px;
+  margin-top: 5px;
+  width: 100%;
+  font-size: 11px;
+  text-indent: 8px;
+  border-radius: 6px;
+  border: 1px solid #80808059;
+}
+
+.logis_auth_form_label {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 800px){
+  .logis_auth_container{
+    flex-direction: column;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .logis_side_panel{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .logis_form_content{
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+@media all and (max-width: 400px){
+  .login_logis_auth_form > h3{
+    font-size: 31px !important;
+  }
+
+  .login_logis_auth_form > svg{
+    left: -3px !important;
+    top: 31px !important;
+    width: 90px !important;
+  }
+}

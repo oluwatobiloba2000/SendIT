@@ -1,0 +1,16 @@
+.dashboard_container{
+    display: flex;
+    height: 100vh;
+    background-color: white;
+}
+
+.layout_container{
+    width: 90%;
+    overflow: auto;
+}
+
+.user_content{
+    padding-top: 11px;
+    min-height: 90% !important;
+    padding: 13px;
+}
