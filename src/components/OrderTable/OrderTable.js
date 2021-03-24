@@ -75,10 +75,10 @@ function OrderTable({ data, loading, belongsTo}) {
             dataIndex: 'order_status',
             render: (status) => {
                 // let color = status === 'Delivered' ? '#05f70070' : '#f759006e';
-    
+                console.log({status})
                 return (
                     <Tag  style={{
-                        backgroundColor: status === 'Cancelled' ? '#e02a2a' : status === 'Approved' ? '#096dd9' : status === 'In Transit' ? 'green' : '#f75900fa' ,
+                        backgroundColor: status === 'Cancelled' ? '#e02a2a' : status === 'Approved' ? '#096dd9' : status === 'In Transit' ? '#0d770dd4' : status === 'Delivered' ? 'green' : status === 'Delayed' ? '#a55d11': '#675e55',
                         justifyContent: 'center'
                     }} className="delivery_status_badge">
                         {status === 'Delivered' && <svg style={{color: 'white'}} width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
