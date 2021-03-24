@@ -21,6 +21,7 @@ import { useHistory } from 'react-router';
 import { toast } from 'react-toastify';
 import io from "socket.io-client";
 import { CONNECTION_PORT } from '../../../App';
+import dayjs from 'dayjs';
 
 const { Content } = Layout;
 
@@ -303,7 +304,10 @@ function Dashboard() {
                                 <div className="flex-column">
                                     <label for="time" className="form_label">When do you want it picked up?</label>
                                     <div style={{ display: 'flex', width: '100%', justifyContent: 'space-between' }}>
-                                        <DatePicker name="pickup_date" ref={register} onChange={(date, dateString) => {
+                                        <DatePicker disabledDate={(value) =>{
+                                                // Can not select days before today and today
+                                                return  value < dayjs();
+                                            }} name="pickup_date" ref={register} onChange={(date, dateString) => {
                                             setDateString(dateString)
                                         }} />
                                         {/* <TimePicker onChange={(time, timeString) => setStringTime(timeString)} /> */}
@@ -326,7 +330,7 @@ function Dashboard() {
 
                                         <div style={{ marginLeft: '3px' }}>
                                             <label className="form_label" for="fullname">Phone number</label>
-                                            <input type="number" id="fullname" className="form_input" ref={register} name="pickup_phone" />
+                                            <input  type="tel" id="fullname" className="form_input" ref={register} name="pickup_phone" />
                                         </div>
                                     </div>
 
@@ -347,7 +351,7 @@ function Dashboard() {
 
                                         <div style={{ marginLeft: '3px' }}>
                                             <label className="form_label" for="fullname">Phone number</label>
-                                            <input type="number" id="fullname" className="form_input" ref={register} name="delivery_phone" />
+                                            <input type="tel" id="fullname" className="form_input" ref={register} name="delivery_phone" />
                                         </div>
                                     </div>
 
